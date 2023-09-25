@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+     <title>html and css</title>
+     <style type="text/css">
+          * {
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+               font-family: sans-serif;
+          }
+
+          header {
+               position: relative;
+          }
+
+          nav {
+               width: 100%;
+               height: 70px;
+               padding: 0px 70px;
+               background: white;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               box-shadow: 2px 0px 5px green;
+          }
+
+          .text {
+               font-weight: bold;
+               font-size: 30px;
+               letter-spacing: 2px;
+          }
+
+          .text span {
+               color: green;
+          }
+
+          .menu a {
+               text-decoration: none;
+               color: black;
+               padding: 10px 20px;
+               font-size: 20px;
+          }
+          .menu a:hover{
+               color: green;
+               text-decoration: underline;
+               text-underline-position: under;
+          }
+          .menu a:last-child {
+               background: green;
+               color: white;
+               border-radius: 8px;
+          }
+
+          .h-text {
+               position: absolute;
+               top: 30%;
+               left: 5%;
+               padding: 15px;
+          }
+
+          .h-text p {
+               color: #262626;
+               letter-spacing: 3px;
+               font-weight: bold;
+          }
+
+          .h-text h1 {
+               font-size: 4em;
+               line-height: 1.5em;
+          }
+
+          .h-text h1 span {
+               color: green;
+          }
+
+          .h-text h2 {
+               font-size: 4em;
+               margin-bottom: 0.5em;
+          }
+
+          #order {
+               text-decoration: none;
+               color: white;
+               background: green;
+               border-radius: 8px;
+               padding: 10px 20px;
+          }
+
+          #dis {
+               text-decoration: none;
+               color: white;
+               background: #262626;
+               border-radius: 8px;
+               padding: 10px 20px;
+          }
+
+          #pizza {
+               position: absolute;
+               bottom: 5%;
+               left: 5%;
+          }
+
+          #pizza img {
+               transition: 0.4s ease;
+          }
+
+          #pizza img:hover {
+               transform: translateY(-20px);
+          }
+
+          .image {
+               float: right;
+               border-radius: 400px;
+               display: flex;
+          }
+         
+     </style>
+</head>
+
+<body>
+     <hrader>
+          <nav style="z-index: 1000;">
+               <div class="text"><span>pi</span>zzahat</div>
+               <div class="menu">
+                    <a href="#">home</a>
+                    <a href="#">foods</a>
+                    <a href="#">offer's</a>
+                    <a href="#">your order</a>
+                    <a href="#">delivery</a>
+                    <a href="#">cart</a>
+          </nav>
+          <div class="image" style="z-index: -1000;margin-top: 20px;">
+               <img height="500" src="pizza.jpg" position="bottom-right" class="d-block w-100" alt="...">
+          </div>
+          <div class="h-text">
+               <p>Free home delivery</p>
+               <h1>Quality F<span>oo</span>ds</h1>
+               <h2>Pizza of the week</h2>
+               <a href="#" id="order">Order now!!</a>
+               <a href="#" id="dis">25% off Hurry!!</a>
+          </div>
+          <div id="pizza">
+               <img src="E:\pizza\pizza1.jpg" width="100">
+               <img src="E:\pizza\pizza1.jpg" width="100">
+               <img src="E:\pizza\pizza1.jpg" width="100">
+          </div>
+          <div class="SocialMedia">
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          </header>
+</body>
+
+</html>
